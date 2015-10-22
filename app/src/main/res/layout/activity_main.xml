@@ -55,11 +55,53 @@
                 android:src="@drawable/belakang" />
 
             <ImageView
+                android:id="@+id/ilang1"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="center"
+                android:src="@drawable/depan"
+                android:layout_alignParentBottom="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/belakang" />
+
+            <ImageView
+                android:id="@+id/ilang2"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/depan"
+                android:layout_alignParentBottom="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/belakang" />
+
+            <ImageView
+                android:id="@+id/ilang3"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/depan"
                 android:layout_alignParentBottom="true" />
+
         </RelativeLayout>
 
     </LinearLayout>
