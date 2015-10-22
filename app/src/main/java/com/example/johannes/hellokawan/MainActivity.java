@@ -13,6 +13,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.VideoView;
 import android.widget.MediaController;
 
@@ -23,11 +24,34 @@ public class MainActivity extends AppCompatActivity {
     static final int IJIN_PAKE_CAMERA = 1;
     ImageView gambarku;
     Button kameraku;
+    Button tombolTulisan;
+    TextView tulisanku;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //ganti tulisan
+        tombolTulisan = (Button) findViewById(R.id.tombolTulisan);
+        tulisanku = (TextView) findViewById(R.id.tulisanku);
+
+        tombolTulisan.setOnClickListener(
+                new Button.OnClickListener(){
+                    public void onClick(View v){
+                        tulisanku.setText("Ini sekali clik");
+                    }
+                }
+        );
+
+        tombolTulisan.setOnLongClickListener(
+                new Button.OnLongClickListener(){
+                    public boolean onLongClick(View v){
+                        tulisanku.setText("Ini click yang lama");
+                        return true;
+                    }
+                }
+        );
 
         //set video
         final VideoView videoku = (VideoView) findViewById(R.id.videoku);
