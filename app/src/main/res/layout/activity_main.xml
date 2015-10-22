@@ -5,46 +5,65 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-
-    <TextView
-        android:id="@+id/tulisanku"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textSize="50sp"/>
-
-    <Button
-        android:id="@+id/tombolTulisan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="bentar atau lama beda"/>
-
-    <Button
-        android:id="@+id/kameraku"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="10dp"
-        android:text="@string/camera"
-        android:onClick="bukaKamera"/>
-
-    <ImageView
-        android:id="@+id/gambarku"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="20dp"/>
+        android:orientation="vertical">
 
-    <VideoView
-        android:id="@+id/videoku"
-        android:layout_width="match_parent"
-        android:layout_height="200dp" />
+        <TextView
+            android:id="@+id/tulisanku"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/tombolTulisan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="bentar atau lama beda" />
+
+        <Button
+            android:id="@+id/kameraku"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:onClick="bukaKamera"
+            android:text="@string/camera" />
+
+        <ImageView
+            android:id="@+id/gambarku"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp" />
+
+        <VideoView
+            android:id="@+id/videoku"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/belakang" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/depan"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
 
     </LinearLayout>
+
 </ScrollView>
 
 
